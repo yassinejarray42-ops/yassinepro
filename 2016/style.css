@@ -1,0 +1,22 @@
+.grand{
+    border-radius: 50%;
+    background-color: red;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-top: 200px;
+    margin-left: 500px;
+    
+}
+@keyframes anime1 {
+    0%{
+        width: 5px;
+        height: 5px;
+    }
+    100%{
+        width: 150px;
+        height: 150px;
+
+    }
+        
+}

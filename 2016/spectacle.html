@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="controle.js"></script>
+</head>
+<body onload="annee()">
+    <form action="ajout.php" method="post"  onsubmit=" verif()">
+        <fieldset>
+        <legend> Ajout d'un spectacle :</legend>
+        <div>
+            <label for="">
+             Piéce :
+            </label>
+            <select name="p" id="p">
+                <option value="">choisir une piéce :</option>
+                <option value="1">le trésore</option>
+                <option value="2">le péché desuccés</option>
+                <option value="3">le gardien</option>
+                <option value="4">les soldats de la lune</option>
+                <option value="5">l'étermel retour</option>
+            </select>
+            
+        </div>
+        <div>
+            <label for="">
+              salle :
+            </label>
+            <select name="s" id="s">
+                <option value="">choisir une salle</option>
+                <option value="TM">theatre municipal</option>
+                <option value="QA">Quatriéme Art</option>
+                <option value="EN"> l"etoile du nord</option>
+                <option value="EA">espace artisto</option>
+            </select>
+        </div>
+        <div>
+            <label for="">
+             date du spectacle :
+            </label>
+            <input type="text" name="j" id="j">/
+            <input type="text" name="m" id="m">/
+            <input type="text" name="a" id="a">(jj/MM/AAAA)
+            
+        </div>
+        <div  class="p">
+            <input type="reset" value="annuler">
+            <input type="submit" value="Ajouter">
+            
+        </div>
+    </fieldset></form>
+</body>
+</html>
